@@ -1,0 +1,178 @@
+div#backgroundImage {
+    direction: rtl;
+    background: url("../image/bg.jpg") center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    div#backgroundImage {
+        height: 50vh !important;
+    }
+    #toplearnIcons img {
+        width: 90%;
+        margin: 0 auto !important;
+    }
+    div.content div h3,
+    h4 {
+        font-size: small;
+        font-weight: bold;
+    }
+    div#toplearnIcons img {
+        width: 40% !important;
+    }
+    div#lessonLabel p,
+    a {
+        font-size: .75rem !important;
+    }
+    div#topics div a,
+    p {
+        font-size: 0.85rem !important;
+    }
+    #topics .topics .card {
+        width: 100% !important;
+    }
+    div#topics div.d-flex>div.card {
+        width: 25%;
+        height: fit-content;
+    }
+    #lessons .card,
+    #favorite .card {
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+}
+
+nav#topnavbar a {
+    color: white;
+    font-weight: bold;
+}
+
+nav#topnavbar a>img {
+    width: 5vw;
+    height: 10vh;
+}
+
+div.nav a {
+    text-decoration: none;
+}
+
+div.search {
+    margin-top: 16vh !important;
+}
+
+div.icons img {
+    width: 15vw;
+    height: 25vh;
+}
+
+div#toplearnIcons img {
+    width: 20%;
+}
+
+
+/*============================================== lessons ============================================================*/
+
+nav#middlenavbar a {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+nav#middlenavbar a>img {
+    width: 3vw;
+    height: 6vh;
+}
+
+div#toplearnicons img {
+    width: 20vw;
+    height: 15vh;
+}
+
+#lessons .card {
+    width: 22%;
+}
+
+
+/*============================================== Topics ============================================================*/
+
+div#topics {
+    direction: rtl;
+    margin-top: 6rem;
+    height: 100% !important;
+    background-color: #163A5F;
+}
+
+div#topics div.d-flex>div.card {
+    width: 30%;
+    height: fit-content;
+    margin: 1rem auto;
+}
+
+#favorite .card {
+    width: 22%;
+}
+
+
+/*============================================ footer =============================================================*/
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(13, 46, 56);
+}
+
+footer div.col-7 {
+    display: flex;
+    border: dashed 1px white;
+    padding: 2vh;
+}
+
+.copyright p {
+    color: white !important;
+}
+
+.media ul li a {
+    font-size: xx-large !important;
+    padding: 0 .7rem !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+/*======================================= Animation ================================*/
+
+.box {
+    animation-name: color;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    from {
+        letter-spacing: normal;
+        opacity: 60%;
+    }
+    to {
+        letter-spacing: 2.5px;
+        opacity: 100%;
+    }
+}
+
+.animation h3,
+h4 {
+    animation-name: changeSize;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeSize {
+    from {}
+    to {
+        letter-spacing: .1rem;
+    }
+}
